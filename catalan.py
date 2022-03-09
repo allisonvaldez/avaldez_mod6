@@ -25,9 +25,9 @@ def catalan(shape):
         output += catalan(shape - index - 1) * catalan(index)
     return output
 
+
 if __name__ == "__main__":
-    """
-    """
+    # Main method should call my function from above.
     for number in range(16):
         print(f"Order " + str(number) + " Catalan number = " + str(catalan(
             number)))
